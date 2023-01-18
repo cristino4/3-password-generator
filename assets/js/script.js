@@ -108,21 +108,21 @@ function writePassword() {
   var password = generatePassword(lettersCriteria,uppercaseCriteria,numbersCriteria,
     specialCharCriteria,lengthCriteria);
   
-
+//show password in text box
   var passwordText = document.querySelector("#password");
   passwordText.value = password;
-  // var lettersCritElement = document.querySelector("#letters").innerHTML;
-  // // var uppercaseCritElement = document.querySelector("#uppercase");
-  // // var numbersCritElement = document.querySelector("#numbers");
-  // // var specialCharCritElement = document.querySelector("#specialCharacters");
-  // // var lengthElement = document.querySelector("#lengths");
+//show criteria used on the page
+  var lettersCritElement = document.querySelector("#letter-criteria");
+  var uppercaseCritElement = document.querySelector("#uppercase-criteria");
+  var numbersCritElement = document.querySelector("#numbers-criteria");
+  var specialCharCritElement = document.querySelector("#special-criteria");
+  var lengthElement = document.querySelector("#length-criteria");
  
-  // console.log("value " + lettersCritElement.value);
-  // lettersCritElement.value = lettersCriteria;
-  // // uppercaseCritElement.value = uppercaseCriteria;
-  // // numbersCritElement.value = numbersCriteria;
-  // // specialCharCritElement.value = specialCharCriteria;
-  // // lengthElement.value = lengthCriteria;
+  lettersCritElement.textContent = "Letters: "+lettersCriteria;
+  uppercaseCritElement.textContent = "Uppercase Letters: "+uppercaseCriteria;
+  numbersCritElement.textContent = "Numbers: "+numbersCriteria;
+  specialCharCritElement.textContent = "Special Characters: "+specialCharCriteria;
+  lengthElement.textContent = "Password Length: "+lengthCriteria;
 }
 
 // Add event listener to generate button
