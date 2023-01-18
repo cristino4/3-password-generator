@@ -54,6 +54,13 @@ header {
   min-height: 100px;
 }
 
+.card-body-criteria{
+  display:flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+
+}
+
 .card-footer {
   text-align: center;
 }
