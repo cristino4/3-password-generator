@@ -11,5 +11,5 @@ The applicaiton is also available on its published site: https://cristino4.githu
 To run the application locally, download the applications files and open the index.html file on any web browser.
 
 ## Screenshot of the application
-![Screenshot of the application](/assets/images/image1.png)
-![Screenshot of the application](/assets/images/image2.png)
+![Screenshot of the application](./assets/images/image1.png)
+![Screenshot of the application](./assets/images/image2.png)
